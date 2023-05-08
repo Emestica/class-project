@@ -34,6 +34,15 @@ $routes->get('/inicio', 'Home::inicio');
 $routes->get('/roles', 'Home::roles');
 
 /*
+ * CRUD PARA ROLES
+ */
+$routes->get('/obtener-roles', 'RolController::getRoles');
+$routes->get('/obtener-roles-por-id/(:num)', 'RolController::getRolesById/$1');
+$routes->get('/guardar-rol', 'RolController::saveRol');
+$routes->get('/actualizar-rol/(:num)', 'RolController::updateRol/$1');
+$routes->get('/eliminar-rol/(:num)', 'RolController::deleteRol/$1');
+
+/*
  * --------------------------------------------------------------------
  * Additional Routing
  * --------------------------------------------------------------------
