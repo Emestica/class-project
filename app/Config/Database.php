@@ -28,8 +28,8 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => '',
-        'database' => 'tdsv-11-a',
+        'password' => 'Admin',
+        'database' => 'ghw_tdsv_11_a',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -41,7 +41,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3308,
+        'port'     => 3306,
     ];
 
     /**
